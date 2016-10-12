@@ -6854,6 +6854,10 @@ body #admin-menu .dropdown li {
   padding: 0;
   width: auto;
 }
+.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+}
 #overlay-container,
 .overlay-modal-background,
 .overlay-element {
