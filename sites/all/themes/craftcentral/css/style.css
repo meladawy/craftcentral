@@ -6916,6 +6916,16 @@ ul.secondary {
 .region-sidebar-second .block:first-child h2.block-title {
   margin-top: 0;
 }
+.breadcrumb {
+  background-color: transparent;
+}
+.breadcrumb li a {
+  color: #454a5a;
+}
+.breadcrumb li a:hover {
+  text-decoration: none;
+  color: #ed1c8b;
+}
 p:last-child {
   margin-bottom: 0;
 }
@@ -7529,4 +7539,62 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
+}
+#wrapper {
+  padding-left: 0;
+  overflow: hidden;
+}
+#wrapper.toggled #sidebar-wrapper {
+  left: 0;
+}
+#sidebar-wrapper {
+  z-index: 9;
+  position: fixed;
+  padding-top: 50px;
+  left: -330px;
+  height: 100%;
+  width: 330px;
+  overflow-y: auto;
+  background-color: #FFF;
+  color: #454a5a;
+}
+#sidebar-wrapper .sidebar-item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#sidebar-wrapper #menu-toggle-close {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 45px;
+}
+#sidebar-wrapper .navbar-nav {
+  width: 100%;
+  clear: both;
+}
+#sidebar-wrapper .navbar-nav li {
+  width: 100%;
+  display: block;
+}
+#page-content-wrapper {
+  width: 100%;
+  margin-top: 50px;
+  position: absolute;
+}
+.transition {
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.text-color-pink {
+  color: #ed1c8b;
+}
+.text-color-pink:hover,
+.text-color-pink:active {
+  color: #d80780;
+}
+.text-size-30 {
+  font-size: 30px;
 }

@@ -1,0 +1,45 @@
+#wrapper {
+    padding-left: 0;
+    overflow: hidden;
+    &.toggled {
+      #sidebar-wrapper {
+          left: 0;
+      }
+    }
+}
+
+#sidebar-wrapper {
+    z-index: 9;
+    position: fixed;
+    padding-top: 50px;
+    left: -330px;
+    height: 100%;
+    width: 330px;
+    overflow-y: auto;
+    background-color: @white;
+    color: @fontColor;
+    .sidebar-item {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    #menu-toggle-close {
+      position: absolute;
+      z-index: 1;
+      top: 50px;
+      right: 45px;
+    }
+    .navbar-nav {
+      width: 100%;
+      clear: both;
+      li {
+        width: 100%;
+        display: block;
+      }
+    }
+}
+
+#page-content-wrapper {
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+}
