@@ -95,7 +95,7 @@
 <!-- /#sidebar-wrapper -->
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div class="row">
     <div class="header-left col-md-8">
       <!-- Sidebar button & region header left -->
@@ -147,18 +147,40 @@
 <!-- Page title -->
 <div class="container-fluid background-pink">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <?php print render($title_prefix); ?>
-        <?php if (!empty($title)): ?>
-          <h1 class="page-header pink-wrapped"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-      </div>
+    <div class="col-xs-12">
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+        <h1 class="page-header pink-wrapped"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
     </div>
   </div>
 </div>
 <!-- End of : Page title  -->
+
+<!-- Region full width -->
+<?php if (!empty($page['region_full_width'])): ?>
+<div class="container-fluid region-full-width">
+  <div class="row">
+    <div class="col-xs-12">
+      <?php print render($page['region_full_width']); ?>
+    </div>
+  </div>
+</div>
+<?php endif ; ?>
+<!-- End of : Region full width  -->
+
+<!-- Region full width Gray -->
+<?php if (!empty($page['region_full_width_gray'])): ?>
+<div class="container-fluid region-full-width-gray background-gray">
+  <div class="row">
+    <div class="col-xs-12">
+      <?php print render($page['region_full_width_gray']); ?>
+    </div>
+  </div>
+</div>
+<?php endif ; ?>
+<!-- End of : Region full width Gray  -->
 
 <div id="page-content-wrapper" class="transition">
 <div class="main-container <?php print $container_class; ?>">
@@ -196,6 +218,18 @@
 
   </div>
 </div>
+
+<!-- Region full width Gray 2 -->
+<?php if (!empty($page['region_full_width_gray_2'])): ?>
+<div class="container-fluid region-full-width-gray-2 background-gray">
+  <div class="row">
+    <div class="col-xs-12">
+      <?php print render($page['region_full_width_gray_2']); ?>
+    </div>
+  </div>
+</div>
+<?php endif ; ?>
+<!-- End of : Region full width Gray 2 -->
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
