@@ -6879,12 +6879,6 @@ body #admin-menu .dropdown li {
 .modal-backdrop {
   z-index: 1610;
 }
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
-}
 .element-invisible {
   margin: 0;
   padding: 0;
@@ -7560,6 +7554,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
+.page-user-register .crm-container .crm-section .label {
+  color: #5f6463;
+}
 #wrapper {
   padding-left: 0;
   overflow: hidden;
@@ -7651,9 +7648,23 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   padding-top: 45px;
   padding-bottom: 45px;
 }
+.padding-vertical-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.padding-vertical-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .padding-horz-30 {
   padding-left: 30px;
   padding-right: 30px;
+}
+.padding-top-35 {
+  padding-top: 35px;
+}
+.padding-bottom-35 {
+  padding-bottom: 35px;
 }
 .margin-vertical-10 {
   margin-top: 10px;
@@ -7661,6 +7672,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .margin-top-0 {
   margin-top: 0px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
 }
 .margin-bottom-45 {
   margin-bottom: 45px;
@@ -7674,10 +7688,26 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .background-gray {
   background-color: #dadadc;
 }
-img.shadow {
+.background-white {
+  background-color: #FFF;
+  color: #656a7d;
+}
+.background-dark {
+  background-color: #454a5b;
+  color: #FFF;
+}
+.shadow {
   box-shadow: 0px 13px 38px 0px #a7a7b1;
   -moz-box-shadow: 0px 13px 38px 0px #a7a7b1;
   -webkit-box-shadow: 0px 13px 38px 0px #a7a7b1;
+}
+.hover-shadow:hover {
+  box-shadow: 0px 30px 40px 0px rgba(34, 35, 40, 0.4);
+  -moz-box-shadow: 0px 30px 40px 0px rgba(34, 35, 40, 0.4);
+  -webkit-box-shadow: 0px 30px 40px 0px rgba(34, 35, 40, 0.4);
+  -moz-transform: translate(0, -4px);
+  transform: translate(0, -4px);
+  -webkit-transform: translate(0, -4px);
 }
 .full-width-block .block-title {
   margin-top: 0;
@@ -7697,4 +7727,86 @@ img.shadow {
 .gray-background-block p.main-paragraph {
   font-size: 18px;
   line-height: 25px;
+}
+.find-design-maker .views-exposed-form .views-exposed-widget {
+  padding: 0 35px 0 0;
+}
+.find-design-maker .views-exposed-form label,
+.find-design-maker .views-exposed-form .views-widget {
+  display: inline-block;
+  color: #454a5b;
+}
+.find-design-maker .views-exposed-form label {
+  font-size: 25px;
+  margin-right: 25px;
+}
+.find-design-maker .views-exposed-form .form-type-textfield {
+  position: relative;
+}
+.find-design-maker .views-exposed-form .form-type-textfield:after {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #FFF;
+  background: #454a5b;
+}
+.find-design-maker .views-exposed-form .form-type-textfield .form-text {
+  outline: 0;
+  min-height: 50px;
+  line-height: 50px;
+  border-radius: 0px;
+  width: 240px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border: 1px solid #454a5b;
+}
+.find-design-maker .views-exposed-form .form-type-select {
+  position: relative;
+}
+.find-design-maker .views-exposed-form .form-type-select:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #FFF;
+  background: #454a5b;
+}
+.find-design-maker .views-exposed-form .form-type-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #454a5b;
+  border: 1px solid #454a5b;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  padding: 0 18px;
+  padding-right: 50px;
+  width: 240px;
+  height: 50px;
+}
+.find-design-maker .design-maker-item img {
+  width: 100%;
+}
+.find-design-maker .designer-name {
+  line-height: 90px;
+  padding: 0 40px;
+  margin: 0;
+}
+.find-design-maker a {
+  color: #454a5b;
+  text-decoration: none;
 }

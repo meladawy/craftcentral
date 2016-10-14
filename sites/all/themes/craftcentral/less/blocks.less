@@ -22,3 +22,93 @@
     }
   }
 }
+
+// Find Design Maker
+.find-design-maker {
+  .views-exposed-form {
+    .views-exposed-widget {
+      padding: 0 35px 0 0;
+    }
+    label,
+    .views-widget {
+      display: inline-block;
+      color: @grayBackgroundBlockHeaders;
+    }
+    label {
+      font-size: 25px;
+      margin-right: 25px;
+    }
+    .form-type-textfield {
+      position: relative;
+      &:after {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 20px;
+        position: absolute;
+        top:0px;
+        right: 0px;
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        color:@white;
+        background: @grayBackgroundBlockHeaders;
+      }
+      .form-text {
+        outline: 0;
+        min-height: 50px;
+        line-height: 50px;
+        border-radius: 0px;
+        width: 240px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border: 1px solid @grayBackgroundBlockHeaders;
+      }
+    }
+    .form-type-select  {
+      position: relative;
+      &:after {
+        content: "\f0d7";
+        font-family: FontAwesome;
+        font-size: 20px;
+        position: absolute;
+        top:0px;
+        right: 0px;
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        color:@white;
+        background: @grayBackgroundBlockHeaders;
+      }
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        color: @grayBackgroundBlockHeaders;
+        border: 1px solid @grayBackgroundBlockHeaders;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        padding: 0 18px;
+        padding-right: 50px;
+        width: 240px;
+        height: 50px;
+      }
+    }
+  }
+  .design-maker-item {
+    img {
+      width: 100%;
+    }
+  }
+  .designer-name {
+    line-height: 90px;
+    padding: 0 40px;
+    margin: 0;
+  }
+  a {
+    color: @grayBackgroundBlockHeaders;
+    text-decoration: none;
+  }
+}
