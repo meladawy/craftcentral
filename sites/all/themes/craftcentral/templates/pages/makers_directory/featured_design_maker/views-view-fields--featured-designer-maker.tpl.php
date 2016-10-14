@@ -23,8 +23,6 @@
  *
  * @ingroup views_templates
  */
- dsm($fields) ;
- dsm($row);
  $maker_design_fid = $row->webform_submitted_data_webform_submissions_data;
  $maker_design_file = file_load($maker_design_fid) ;
  // Generate Resized Image from webform file id
@@ -59,7 +57,7 @@
       </div>
       <!-- View Profile -->
       <div class="col-xs-12">
-        <?php print l(t("View Profile"),"user/".$user_id, array("attributes" => array("class" => array("uppercase", "btn", "view-profile", "margin-top-60", "transition")))) ; ?> 
+        <?php print l(t("View Profile"),"user/".$user_id, array("attributes" => array("class" => array("uppercase", "btn", "view-profile", "margin-top-60", "transition")))) ; ?>
       </div>
     </div>
   </div>
