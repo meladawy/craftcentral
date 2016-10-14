@@ -95,13 +95,14 @@
 <!-- /#sidebar-wrapper -->
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="<?php print $container_class; ?>">
+  <div class="container">
+    <div class="row">
     <div class="header-left col-md-8">
       <!-- Sidebar button & region header left -->
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 line-height-30">
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-          <a href="#menu-toggle" id="menu-toggle" class="sidebar-toggle text-size-30 text-color-pink"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <a href="#menu-toggle" id="menu-toggle" class="sidebar-toggle pull-left text-size-30 text-color-pink"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <?php endif; ?>
 
         <?php if(!empty($page['header_left'])) : ?>
@@ -113,7 +114,7 @@
       </div>
       <!-- Bread Crumb -->
       <div class="row">
-        <div class="col-xs-12 breadcrumb-wrapper">
+        <div class="col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0 breadcrumb-wrapper">
           <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
         </div>
       </div>
@@ -131,19 +132,36 @@
       <?php endif; ?>
     </div>
   </div>
+  </div>
 </header>
+
+
+<header role="banner" id="page-header">
+  <?php if (!empty($site_slogan)): ?>
+    <p class="lead"><?php print $site_slogan; ?></p>
+  <?php endif; ?>
+
+  <?php print render($page['header']); ?>
+</header> <!-- /#page-header -->
+
+<!-- Page title -->
+<div class="container-fluid background-pink">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <?php print render($title_prefix); ?>
+        <?php if (!empty($title)): ?>
+          <h1 class="page-header pink-wrapped"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of : Page title  -->
 
 <div id="page-content-wrapper" class="transition">
 <div class="main-container <?php print $container_class; ?>">
-
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -157,11 +175,6 @@
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>

@@ -172,9 +172,8 @@ body {
 
 // Branding.
 .navbar .logo {
-  margin-right: -15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding:0;
+  margin: 0;
   @media @tablet {
     margin-right: 0;
     padding-left: 0;
@@ -192,6 +191,13 @@ ul.secondary {
 // Page header.
 .page-header {
   margin-top: 0;
+  &.pink-wrapped {
+    padding: 0;
+    margin: 0;
+    color: @white;
+    line-height: 100px;
+    border:none;
+  }
 }
 
 // Sidebar blocks.
@@ -205,6 +211,7 @@ ul.secondary {
 // Breadcrumb
 .breadcrumb {
   background-color: transparent;
+  padding: 15px 0;
     li {
       a {
         color: @fontColor;
@@ -829,6 +836,20 @@ div.features-export-list {
       margin-top: 0;
     }
   }
+}
+// My Profile Dummy Icon
+.my-profile {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 0 30px;
+  color: @fontColor;
+  border: 2px solid @fontColor;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  padding: 0px;
+  text-align: center;
 }
 
 // Navbar module.

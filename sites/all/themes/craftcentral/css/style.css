@@ -6891,9 +6891,8 @@ body #admin-menu .dropdown li {
   width: 1px;
 }
 .navbar .logo {
-  margin-right: -15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .navbar .logo {
@@ -6912,15 +6911,23 @@ ul.secondary {
 .page-header {
   margin-top: 0;
 }
+.page-header.pink-wrapped {
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  line-height: 100px;
+  border: none;
+}
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
   margin-top: 0;
 }
 .breadcrumb {
   background-color: transparent;
+  padding: 15px 0;
 }
 .breadcrumb li a {
-  color: #454a5a;
+  color: #5f6463;
 }
 .breadcrumb li a:hover {
   text-decoration: none;
@@ -7508,6 +7515,19 @@ fieldset.features-export-component .component-select .form-type-checkbox input[t
 div.features-export-list .form-type-checkbox input[type=checkbox] {
   margin-top: 0;
 }
+.my-profile {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 0 30px;
+  color: #5f6463;
+  border: 2px solid #5f6463;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  padding: 0px;
+  text-align: center;
+}
 body.navbar-is-fixed-top.navbar-administration.navbar-horizontal.navbar-tray-open .navbar-fixed-top {
   top: 79px;
 }
@@ -7556,7 +7576,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 330px;
   overflow-y: auto;
   background-color: #FFF;
-  color: #454a5a;
+  color: #5f6463;
 }
 #sidebar-wrapper .sidebar-item {
   margin-right: 15px;
@@ -7578,7 +7598,6 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 #page-content-wrapper {
   width: 100%;
-  margin-top: 50px;
   position: absolute;
 }
 .transition {
@@ -7597,4 +7616,10 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .text-size-30 {
   font-size: 30px;
+}
+.line-height-30 {
+  line-height: 30px;
+}
+.background-pink {
+  background-color: #ed1c8b;
 }
