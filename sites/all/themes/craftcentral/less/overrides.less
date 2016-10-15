@@ -193,6 +193,10 @@ ul.secondary {
     color: @white;
     line-height: 100px;
     border:none;
+    @media screen and ( max-width: @screen-sm-max ) {
+      line-height: 1em;
+      margin: 10px 0;
+    }
   }
 }
 
@@ -880,6 +884,104 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
+}
+#page-content-wrapper {
+  margin-top: -1px;
+}
+.designer-profile-image {
+  img {
+    @media screen and ( max-width: @screen-sm-max ) {
+      margin:auto;
+    }
+  }
+}
+.view-designer-portfolio {
+    .jcarousel-item {
+      width: 850px;
+      padding: 40px 60px;
+      background: none;
+      border: none;
+      height: auto;
+      @media screen and ( max-width: @screen-sm-max ) {
+        width: 500px;
+        padding: 40px 40px;
+      }
+    }
+    .jcarousel-container-horizontal {
+      height: auto;
+      width: 100% !important;
+      padding: 0px;
+      .jcarousel-clip  {
+        width: 100% !important;
+      }
+    }
+    .designer-portolio-item {
+      img  {
+        width: 100%;
+      }
+      .design-name {
+        font-size: 22px;
+        height: 50px;
+        overflow: hidden;
+        padding: 15px 30px;
+      }
+      .main-paragraph {
+        height: 90px;
+        overflow: hidden;
+        padding: 5px 30px;
+      }
+    }
+     .jcarousel-next-horizontal {
+       top: 50%;
+       right: 80px;
+       background: none;
+       text-decoration: none;
+       &:after {
+         content: "\f054";
+         font-family: FontAwesome;
+         font-size: 25px;
+         height: 60px;
+         width: 60px;
+         color: @white;
+       }
+     }
+     .jcarousel-prev-horizontal {
+       top: 50%;
+       left: 80px;
+       background: none;
+      text-decoration: none;
+       &:after {
+         content: "\f053";
+         font-family: FontAwesome;
+         font-size: 25px;
+         height: 60px;
+         width: 60px;
+         color: @white;
+       }
+     }
+}
+
+.designer-connect {
+  .connect-item {
+    margin-bottom: 10px;
+    .fa {
+      color: @grayBackgroundBlockParagraph;
+    }
+    a {
+      color: @linkColor;
+      text-decoration: none;
+      padding: 5px;
+    }
+  }
+}
+label {
+  &.profile-label {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: @grayBackgroundBlockParagraph;
+    display: block;
+    text-transform: uppercase;
+  }
 }
 .page-user-register {
   .crm-container {

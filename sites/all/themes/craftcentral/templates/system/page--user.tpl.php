@@ -73,7 +73,7 @@
  * @ingroup templates
  */
  $account = menu_get_object('user');
- $civicrm_profile_data = civicrm_custom_user_profile_get_contact($account->uid) ;
+ $civicrm_profile_data = !empty($account->uid) ? civicrm_custom_user_profile_get_contact($account->uid)  : "";
  // Override page title
  if(!empty($civicrm_profile_data['display_name'])) {
    $title = $civicrm_profile_data['display_name'] ;

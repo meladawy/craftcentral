@@ -6912,6 +6912,12 @@ ul.secondary {
   line-height: 100px;
   border: none;
 }
+@media screen and (max-width: 991px) {
+  .page-header.pink-wrapped {
+    line-height: 1em;
+    margin: 10px 0;
+  }
+}
 .region-sidebar-first .block:first-child h2.block-title,
 .region-sidebar-second .block:first-child h2.block-title {
   margin-top: 0;
@@ -7554,6 +7560,95 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
+#page-content-wrapper {
+  margin-top: -1px;
+}
+@media screen and (max-width: 991px) {
+  .designer-profile-image img {
+    margin: auto;
+  }
+}
+.view-designer-portfolio .jcarousel-item {
+  width: 850px;
+  padding: 40px 60px;
+  background: none;
+  border: none;
+  height: auto;
+}
+@media screen and (max-width: 991px) {
+  .view-designer-portfolio .jcarousel-item {
+    width: 500px;
+    padding: 40px 40px;
+  }
+}
+.view-designer-portfolio .jcarousel-container-horizontal {
+  height: auto;
+  width: 100% !important;
+  padding: 0px;
+}
+.view-designer-portfolio .jcarousel-container-horizontal .jcarousel-clip {
+  width: 100% !important;
+}
+.view-designer-portfolio .designer-portolio-item img {
+  width: 100%;
+}
+.view-designer-portfolio .designer-portolio-item .design-name {
+  font-size: 22px;
+  height: 50px;
+  overflow: hidden;
+  padding: 15px 30px;
+}
+.view-designer-portfolio .designer-portolio-item .main-paragraph {
+  height: 90px;
+  overflow: hidden;
+  padding: 5px 30px;
+}
+.view-designer-portfolio .jcarousel-next-horizontal {
+  top: 50%;
+  right: 80px;
+  background: none;
+  text-decoration: none;
+}
+.view-designer-portfolio .jcarousel-next-horizontal:after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 25px;
+  height: 60px;
+  width: 60px;
+  color: #FFF;
+}
+.view-designer-portfolio .jcarousel-prev-horizontal {
+  top: 50%;
+  left: 80px;
+  background: none;
+  text-decoration: none;
+}
+.view-designer-portfolio .jcarousel-prev-horizontal:after {
+  content: "\f053";
+  font-family: FontAwesome;
+  font-size: 25px;
+  height: 60px;
+  width: 60px;
+  color: #FFF;
+}
+.designer-connect .connect-item {
+  margin-bottom: 10px;
+}
+.designer-connect .connect-item .fa {
+  color: #656a7d;
+}
+.designer-connect .connect-item a {
+  color: #00bff3;
+  text-decoration: none;
+  padding: 5px;
+}
+label.profile-label {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #656a7d;
+  display: block;
+  text-transform: uppercase;
+}
 .page-user-register .crm-container .crm-section .label {
   color: #5f6463;
 }
@@ -7663,8 +7758,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .padding-top-35 {
   padding-top: 35px;
 }
+.padding-top-45 {
+  padding-top: 45px;
+}
 .padding-bottom-35 {
   padding-bottom: 35px;
+}
+.nomargin {
+  margin: 0;
 }
 .margin-vertical-10 {
   margin-top: 10px;
@@ -7699,6 +7800,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .full-width-image img {
   width: 100%;
 }
+.rounded-image img {
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.inline-image img {
+  display: inline-block;
+}
 .shadow {
   box-shadow: 0px 13px 38px 0px #a7a7b1;
   -moz-box-shadow: 0px 13px 38px 0px #a7a7b1;
@@ -7711,6 +7820,18 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   -moz-transform: translate(0, -4px);
   transform: translate(0, -4px);
   -webkit-transform: translate(0, -4px);
+}
+.full-width-white-block .block-title {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.full-width-white-block .designer-profile-specialism {
+  color: #656a7d;
+}
+.full-width-white-block .main-paragraph {
+  color: rgba(100, 105, 125, 0.75);
+  font-size: 16px;
+  line-height: 25px;
 }
 .full-width-block .block-title {
   margin-top: 0;
@@ -7733,6 +7854,15 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .find-design-maker .views-exposed-form .views-exposed-widget {
   padding: 0 35px 0 0;
+  /* Portrait tablets and small desktops */
+}
+@media screen and (max-width: 991px) {
+  .find-design-maker .views-exposed-form .views-exposed-widget {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .find-design-maker .views-exposed-form label,
 .find-design-maker .views-exposed-form .views-widget {
@@ -7742,6 +7872,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .find-design-maker .views-exposed-form label {
   font-size: 25px;
   margin-right: 25px;
+}
+@media screen and (max-width: 991px) {
+  .find-design-maker .views-exposed-form label {
+    width: 100%;
+  }
 }
 .find-design-maker .views-exposed-form .form-type-textfield {
   position: relative;

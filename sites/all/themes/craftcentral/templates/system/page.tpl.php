@@ -97,7 +97,7 @@
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="row">
-    <div class="header-left col-md-8">
+    <div class="header-left col-sm-8 col-xs-12">
       <!-- Sidebar button & region header left -->
       <div class="row">
         <div class="col-xs-12 line-height-30">
@@ -120,7 +120,7 @@
       </div>
     </div>
 
-    <div class="navbar-header col-md-4">
+    <div class="navbar-header col-sm-4 col-xs-12">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-right" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />

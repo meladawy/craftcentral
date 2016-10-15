@@ -23,42 +23,27 @@
  *
  * @ingroup views_templates
  */
+
  $maker_design_fid = $row->webform_submitted_data_webform_submissions_data;
  $maker_design_file = file_load($maker_design_fid) ;
  // Generate Resized Image from webform file id
  if(!empty($maker_design_file)) {
    $maker_design_uri = $maker_design_file->uri ;
-   $maker_design_url = image_style_url("featured_design_maker", $maker_design_uri);
+   $maker_design_url = image_style_url("designer_portfolio", $maker_design_uri);
  }
- $user_id = $row->uid;
+ // Portfolio Data
+ $design_name = !empty($fields['data_1']->raw) ? $fields['data_1']->content : "" ;
+ $design_description = !empty($fields['data_2']->raw) ? $fields['data_2']->raw : "" ;
+
 ?>
 
-<div class="row">
-  <div class="col-xs-12 row">
-    <!-- Featured Design Maker Image -->
-    <div class="col-sm-4 col-xs-12 full-width-image">
-      <?php if(!empty($maker_design_url)) : ?>
-        <img src="<?php print $maker_design_url; ?>" class="shadow" />
-      <?php endif; ?>
-    </div>
-    <!-- Featured Design Maker Details -->
-    <div class="col-sm-8 col-xs-12">
-      <!-- Print Designer Name  -->
-      <div class="col-xs-12">
-        <h3 class="designer-name margin-vertical-10"><?php print $fields['first_name']->content . " " . $fields['last_name']->content ; ?></h3>
-      </div>
-      <!-- Print Designer Specialist  -->
-      <div class="col-xs-12">
-        <h4 class="designer-specialism uppercase"><?php print $fields['specialism_13']->content ; ?></h4>
-      </div>
-      <!-- Print Designer Bio  -->
-      <div class="col-xs-12">
-        <p class="designer-bio main-paragraph"><?php print $fields['bio_10']->content ?></p>
-      </div>
-      <!-- View Profile -->
-      <div class="col-xs-12">
-        <?php print l(t("View Profile"),"user/".$user_id, array("attributes" => array("class" => array("uppercase", "btn", "view-profile", "margin-top-60", "transition")))) ; ?>
-      </div>
-    </div>
-  </div>
+
+<div class="background-white design-maker-item designer-portolio-item shadow transition">
+  <?php if(!empty($maker_design_url)) : ?>
+    <?php print '<img src="' . $maker_design_url . '" />' ; ?>
+  <?php endif; ?>
+
+  <h3 class="design-name text-left margin-vertical-10"><?php print $design_name ; ?></h3>
+
+  <div class="main-paragraph text-left"> <?php print $design_description ; ?> </div>
 </div>
