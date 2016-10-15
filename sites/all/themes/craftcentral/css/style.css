@@ -7659,6 +7659,16 @@ label.profile-label {
 #wrapper.toggled #sidebar-wrapper {
   left: 0;
 }
+#wrapper.toggled #sidebar-wrapper:after {
+  content: " ";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 330px;
+  right: 0;
+  z-index: 1;
+  background: rgba(158, 156, 156, 0.41);
+}
 #sidebar-wrapper {
   z-index: 9;
   position: fixed;
@@ -7687,6 +7697,17 @@ label.profile-label {
 #sidebar-wrapper .navbar-nav li {
   width: 100%;
   display: block;
+  padding: 0 20px;
+}
+#sidebar-wrapper .navbar-nav li a {
+  text-decoration: none;
+  color: #656a7d;
+  font-size: 20px;
+}
+#sidebar-wrapper .navbar-nav li a:hover,
+#sidebar-wrapper .navbar-nav li a:active {
+  color: #ed1c8b;
+  background: none;
 }
 #page-content-wrapper {
   width: 100%;
